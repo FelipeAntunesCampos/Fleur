@@ -9,8 +9,20 @@ background-color: rgb(17, 105, 17);
 }
 
 .flex-container { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
-    width: 90%;
+    width: 850px;
     height: 462px;
+    background-color: #b1a6a6; /* Cinza claro */
+    margin: 0 auto 20px;
+     margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex-item { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
+    width: 100px;
+    height: 102px;
     background-color: #ffffff; /* Cinza claro */
     margin: 0 auto 20px;
     display: flex;
