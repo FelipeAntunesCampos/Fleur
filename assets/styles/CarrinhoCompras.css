@@ -1,0 +1,20 @@
+*{
+background-color: rgb(17, 105, 17);
+}
+
+.logo{
+    width: 225.576px;
+    height: 52.681px;
+    flex-shrink: 0;
+}
+
+.flex-container { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
+    width: 90%;
+    height: 462px;
+    background-color: #ffffff; /* Cinza claro */
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
