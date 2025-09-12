@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    box-shadow: 2px 2px 30px;
+
+}
+
+.logo {
+   height: 30px;
+   justify-content: center;
+}
+
+.textos-header1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.textos-header2 {
+    display: flex;
+    flex-direction: row;
+}
