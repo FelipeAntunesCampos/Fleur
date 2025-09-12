@@ -1,0 +1,25 @@
+
+.imagem1 {
+  position: absolute;
+  top: 0;   /* Posiciona no topo */
+  left: 0;  /* Posiciona na esquerda */
+  width: 250px; /* Tamanho da imagem */
+  height: auto; /* Mantém a proporção */
+}
+
+
+.imagem2 {
+  position: absolute;
+ 
+  right: 0;   /* Posiciona na direita */
+  width: 250px; /* Tamanho da imagem */
+  height: auto; /* Mantém a proporção */
+}
+
+.imagem3 {
+  position: absolute;
+ 
+  left: 0;   /* Posiciona na direita */
+  width: 250px; /* Tamanho da imagem */
+  height: auto; /* Mantém a proporção */
+}
