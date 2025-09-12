@@ -2,31 +2,25 @@
 background-color: rgb(17, 105, 17);
 }
 
-.logo{
-    width: 225.576px;
-    height: 52.681px;
-    flex-shrink: 0;
-}
 
 .flex-container { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
     width: 850px;
     height: 462px;
     background-color: #b1a6a6; /* Cinza claro */
-    margin: 0 auto 20px;
-     margin-top: 200px;
+    margin: 0 auto ;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 .flex-item { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
-    width: 100px;
+    width: 600px;
     height: 102px;
     background-color: #ffffff; /* Cinza claro */
-    margin: 0 auto 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
-    gap: 20px;
+    position:absolute;
+    margin-left: 300px;
+    margin-top: 10px;
 }
