@@ -4,23 +4,50 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #273B2D;
+}
+.controle-gradient{
+    display: flex;
+    justify-content: center;
+
+}
+.gradient{
+    width: 688px;
+    height: 688px;
+    flex-shrink: 0;
+    border-radius: 688px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(161, 171, 147, 0.61) 0%, rgba(63, 98, 74, 0.00) 100%);
+    
+}
+
 header {
+    background-color: rgb(255, 255, 255);
     display: flex;
     box-shadow: 2px 2px 30px;
-
+    width: 100%;
+    padding: 35px;
+    justify-content: space-around;
+}
+.logo{
+    width: 250px;
+    justify-content: center;
+    height: auto;
 }
 
-.logo {
-   height: 30px;
-   justify-content: center;
-}
+
 
 .textos-header1 {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+    font-size: 22px;
 }
 
 .textos-header2 {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+    font-size: 22px;
 }
