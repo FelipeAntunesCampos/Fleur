@@ -7,10 +7,67 @@
     <link rel="stylesheet" href="/assets/styles/CarrinhoCompras.css">
 </head>
 <body> 
-    <div class="flex-container">
-    <div class="flex-item"></div>
-    <div class="flex-item2"></div>
-    <div class="flex-item3"></div>
+    <div id = "imgLogo">
+        <img src="../assets/images/fleur logo clara.png" alt="Logo Fleur clara">
     </div>
+    
+    <div class="flex-container">
+    <!--Adiciona div do primeiro retangulo-->
+    <div class="flex-item">
+        <!--Adiciona div dos textos dentro retangulo-->
+        <div id = "textos">
+             <div class="info-produto">
+             <h3 class="nome-produto">Colar de diamante</h3>
+             <p class="preco">R$30.000,00</p>
+        </div>
+        </div>
+     <!--Adiciona div dos botões dentro retangulo-->
+        <div class="seletor-quantidade">
+        <input type="number" value="1" min="1" class="quantidade">
+        <button class="botao-quantidade mais">+</button>
+        <button class="botao-quantidade menos">-</button>
+    </div>
+    </div>
+
+     <!--Adiciona div do segundo retangulo-->
+    <div class="flex-item2">
+        <!--Adiciona div dos textos dentro retangulo-->
+        <div id = "textos">
+             <div class="info-produto">
+             <h3 class="nome-produto">Brinco de Brilhante</h3>
+             <p class="preco">R$10.000,00</p>
+        </div>
+        </div>
+        <!--Adiciona div dos botões dentro retangulo-->
+        <div class="seletor-quantidade">
+        <input type="number" value="1" min="1" class="quantidade">
+        <button class="botao-quantidade mais">+</button>
+        <button class="botao-quantidade menos">-</button>
+    </div>
+    </div>
+
+        <!--Adiciona div do terceiro retangulo-->
+    <div class="flex-item3">
+         <!--Adiciona div dos textos dentro retangulo-->
+        <div id = "textos">
+             <div class="info-produto">
+             <h3 class="nome-produto">Anel de diamante</h3>
+             <p class="preco">R$15.000,00</p>
+        </div>
+        </div>
+        <!--Adiciona div dos botões dentro retangulo-->
+        <div class="seletor-quantidade">
+        <input type="number" value="1" min="1" class="quantidade">
+        <button class="botao-quantidade mais">+</button>
+        <button class="botao-quantidade menos">-</button>
+    </div>
+    </div>
+        <div class = "retanguloCarrinho">
+        <div id = "imgCarrinho">
+        <img src="../assets/images/carrinhoCompras.png" alt="Img Carrinho">
+    </div>
+    </div>
+
+    </div> <!--fechamneto div do flex-container-->
 </body>
 </html>

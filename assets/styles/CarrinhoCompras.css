@@ -1,16 +1,66 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
 background-color: rgb(17, 105, 17);
 }
 
+#imgLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.retanguloCarrinho { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
+    width: 250px;
+    height: 460px;
+    background-color: #f5f3f3; /* Cinza claro */
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    position:absolute;
+    margin-right: 600px;
+    border-radius: 10px;
+}
 
 .flex-container { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
     width: 850px;
     height: 462px;
     background-color: #b1a6a6; /* Cinza claro */
     margin: 0 auto ;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
+    gap: 30px;
+}
+.flex-item2 { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
+    width: 600px;
+    height: 102px;
+    background-color: #ffffff; /* Cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Mantém position: absolute */
+    margin-left: 300px;
+    margin-top: 130px; /* Ajustado para 130px para descer mais (102px de altura do primeiro + 28px de espaçamento) */
+    border-radius: 10px;
+}
+
+.flex-item3 { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
+    width: 600px;
+    height: 102px;
+    background-color: #ffffff; /* Cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Mantém position: absolute */
+    margin-left: 300px;
+    margin-top: 270px; /* Ajustado para 130px para descer mais (102px de altura do primeiro + 28px de espaçamento) */
+    border-radius: 10px;
 }
 
 .flex-item { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
@@ -22,5 +72,59 @@ background-color: rgb(17, 105, 17);
     align-items: center;
     position:absolute;
     margin-left: 300px;
-    margin-top: 10px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+/* Estiliza o contêiner geral do produto para alinhar os elementos */
+#textos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Estiliza os textos */
+.info-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço entre o título e o preço */
+}
+
+.nome-produto {
+    font-size: 20px;
+    font-family: serif; /* Use uma fonte mais elegante, parecida com a imagem */
+    margin: 0;
+}
+
+.preco {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Estiliza o seletor de quantidade */
+.seletor-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantidade {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.botao-quantidade {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 50%; /* Faz o botão circular */
+    font-size: 20px;
+    cursor: pointer;
 }
