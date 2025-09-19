@@ -1,11 +1,10 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FAFAF3;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Sem rolamento */
+    overflow: hidden; /* Sem rolamento */
+    background-color: rgb(63, 98, 74);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem1 {
@@ -23,6 +22,7 @@ body {
   width: 250px; /* Tamanho da imagem */
   height: auto; /* Mantém a proporção */
   top: 0;
+  
 }
 
 .imagem3 {
@@ -37,14 +37,33 @@ body {
   position: absolute;
   width: 200px; /* Tamanho da imagem */
   height: auto; /* Mantém a proporção */
-  bottom: -3%;
+  bottom: -5%;
+}
+
+.logo {
+    text-align: center;
+
+}
+
+.link {
+    display: block; 
+    margin: 15px auto 0 auto; /* 15px em cima, auto nas laterais (centraliza), 0 embaixo */
+    /* 3. Estilos de aparência (mantidos ou ajustados) */
+    width: 80%; 
+    padding: 12px;
+    background-color: transparent; /* Geralmente links não têm cor de fundo de botão */
+    color: #9B7059; /* Use a cor marrom para o texto do link */
+    /* Remove estilos de botão que não queremos para um link simples */
+    border: none;
+    border-radius: 0; /* Remove o arredondamento */
+    font-size: 1rem; /* Traz o tamanho de volta para um link */
+    font-weight: 500;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    text-align: center; /* Centraliza o texto dentro do bloco do link */
 }
 
 
-
-
-
-.box-login {
+.box-register {
   position: relative;  
   text-align: center;
   padding: 50px 30px;
@@ -59,19 +78,13 @@ body {
 }
 
 
-.titulo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #333333;
-    margin-bottom: 5px;
-}
-
 
 .subtitulo {
     font-size: 0.9rem;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 40px;
-    font-weight: 300;
+    font-weight: 25;
+    font-size: 150%;
 }
 
 
@@ -90,6 +103,7 @@ body {
     color: #333333;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    font-family: Montesarat;
   
 }
 
@@ -116,7 +130,7 @@ body {
     display: block;
     margin-top: 15px;
     font-size: 0.9rem;
-    color: #9B7059;
+    color: #000000;
     text-decoration: none;
     font-weight: 400;
 }
