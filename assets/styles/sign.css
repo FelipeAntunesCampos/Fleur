@@ -1,3 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAFAF3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Sem rolamento */
+}
 
 .imagem1 {
   position: absolute;
@@ -10,16 +19,108 @@
 
 .imagem2 {
   position: absolute;
- 
-  right: 0;   /* Posiciona na direita */
+  right: 450px;
   width: 250px; /* Tamanho da imagem */
   height: auto; /* Mantém a proporção */
+  top: 0;
 }
 
 .imagem3 {
   position: absolute;
- 
   left: 0;   /* Posiciona na direita */
-  width: 250px; /* Tamanho da imagem */
+  width: 400px; /* Tamanho da imagem */
+  height: 1000; /* Mantém a proporção */
+}
+
+.imagem4 {
+  right: 590px;
+  position: absolute;
+  width: 200px; /* Tamanho da imagem */
   height: auto; /* Mantém a proporção */
+  bottom: -3%;
+}
+
+
+
+
+.box-login {
+  position: relative;  
+  text-align: center;
+  padding: 50px 30px;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+
+.subtitulo {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+
+.grupo {
+    margin-bottom: 20px;
+}
+
+
+.grupo input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid rgb(109, 205, 139 );
+    border-radius: 25px;
+    background-color: #FAFAF3;
+    color: #333333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  
+}
+
+
+.botao {
+    width: 80%;
+    padding: 12px;
+    background-color: #9B7059;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+.botao:hover {
+    background-color: #8B644E;
+}
+
+
+.link {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.link:hover {
+    text-decoration: underline;
 }
