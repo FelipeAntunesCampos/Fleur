@@ -57,6 +57,12 @@ header {
     letter-spacing: 2px;
 }
 
+.logo img {
+    width: 250px;
+    justify-content: center;
+    height: auto;
+}
+
 .logo-icon {
     font-size: 2.1rem;
 }
