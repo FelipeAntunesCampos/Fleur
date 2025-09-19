@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #b0bfa7;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header {
+    background: #b0bfa7;
+    box-shadow: 0 2px 8px #00000010;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 40px;
+    border-bottom: 2px solid #8a9c87;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-right {
+    gap: 28px;
+}
+
+.nav-list li {
+    font-size: 1.15rem;
+}
+
+.nav-list a {
+    color: #47523e;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-list a:hover {
+    color: #6e7f63;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 2.1rem;
+    color: #47523e;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+}
+
+.logo-icon {
+    font-size: 2.1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.products {
+    display: flex;
+    gap: 38px;
+}
+
+.product-card {
+    background: #242c22;
+    border-radius: 32px;
+    padding: 24px 18px 18px 18px;
+    width: 235px;
+    box-shadow: 0 2px 12px #0001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ede8da;
+}
+
+.product-card img {
+    width: 175px;
+    height: 158px;
+    object-fit: cover;
+    border-radius: 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.product-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.17rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #ede8da;
+    font-weight: 500;
+}
+
+.product-card .price {
+    font-size: 1.09rem;
+    color: #ede8da;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.product-card button {
+    background: #b0bfa7;
+    color: #47523e;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 0;
+    width: 90%;
+    font-size: 1rem;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.product-card button:hover {
+    background: #8a9c87;
+    color: #ede8da;
+}
