@@ -10,29 +10,24 @@
 body{
     background-color: #273B2D;
 }
-.controle-gradient {
-    position: relative;
+
+.img {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     width: 100%;
     height: 100vh;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
 }
 
-.gradient {
-    position: absolute;
-    width: 688px;
-    height: 688px;
-    border-radius: 688px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(161, 171, 147, 0.61) 0%, rgba(63, 98, 74, 0.00) 100%);
-}
-
-.anel {
-    position: absolute;
-    width: 950px; /* Ajuste este valor conforme necessário */
+.trabalhador {
+    position: relative;
+    width: 50px; /* Tamanho base da imagem */
     height: auto;
-    z-index: 1;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease; /* Suaviza qualquer mudança de posição */
 }
 
 header {
@@ -102,19 +97,5 @@ header {
     color: #273B2D;
     text-decoration: none;
 
-}
-
-.img {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
-}
-
-.trabalhador {
-    width: 500px; /* Ajuste este valor conforme o tamanho desejado */
-    height: auto;
 }
 
