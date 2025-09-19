@@ -83,7 +83,6 @@ body {
 .contact-container a {
   text-decoration: none;
   color: #bfc6b1;
-  font-weight: 600;
 }
 @media (max-width: 800px) {
   .navbar {
