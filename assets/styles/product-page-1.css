@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.controle-gradient {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.gradient {
+    position: absolute;
+    width: 688px;
+    height: 688px;
+    border-radius: 688px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(161, 171, 147, 0.61) 0%, rgba(63, 98, 74, 0.00) 100%);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-shadow: 2px 2px 30px;
+    width: 100%;
+    padding: 35px;
+
+}
+
+.logo{
+    width: 33%;
+    justify-content: center;
+    height: auto;
+    padding-left: 185px;
+    padding-right: 185px;
+}
+
+.textos-header1 {
+    font-family:  Raleway, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    font-size: 22px;
+    width: 33%;
+    
+}
+
+.textos-header2 {
+    font-family:  Raleway, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 70px;
+    font-size: 22px;
+    width: 33%;
+}
+
+.viewcolection {
+    background-color: antiquewhite;
+    color: #273B2D;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adiciona esta linha para centralização perfeita */
+    display: flex;
+    justify-content: center;
+    cursor: pointer; /* Adiciona cursor pointer para melhor experiência do usuário */
+    transition: all 0.3s ease; /* Adiciona transição suave para efeitos hover */
+    z-index: 999;
+}
+
+.viewcolection:hover {
+    background-color: #ffffff;
+    color: #273B2D;
+    translate: 0 -5px;
+}
+
+.texto-button {
+    color: #273B2D;
+    text-decoration: none;
+
+}
