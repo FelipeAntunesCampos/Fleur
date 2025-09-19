@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, #81C897, #3F624A, #3F624A);
+    font-family: Arial, sans-serif;
+}
+
+.flex-container { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
+    width: 90%;
+    height: 2000px;
+    background-color: black; /* Cinza claro */
+    margin: 0 auto ;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+.retanguloPrincipal { /* Cria uma caixa na qual vai armazenar as caracteristicas*/
+    width: 1400px;
+    height: 800px;
+    background-color: #ffffff; /* Cinza claro */
+    margin: 0 auto ;
+    margin-top: -1000px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.flex-retangulo1 { /* Cria uma caixa na qual vai armazenar as caracteristicas*/
+    width: 50%;
+    height: 800px;
+    background-color: #f51010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.flex-retangulo2 { /* Cria uma caixa na qual vai armazenar as caracteristicas*/
+    width: 50%;
+    height: 800px;
+    background-color: #b31818; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.rItem1 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    margin-left: 100px;
+    border: 5px solid #FFD700;
+}
+
+.rItem2 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    border: 5px solid #FFD700;
+}
+
+.rItem3 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    border: 5px solid #FFD700;
+}
+
+.rItem4 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    border: 5px solid #FFD700;
+}
+
+.r2Item1 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    margin-left: 100px;
+    border: 5px solid #FFD700;
+}
+
+.r2Item2 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    border: 5px solid #FFD700;
+}
+
+.r2Item3 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    border: 5px solid #FFD700;
+}
+
+.r2Item4 {
+    width: 500px;
+    height: 50px;
+    background-color: #111010; /* Cinza claro */
+    margin: 0 auto ;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    border: 5px solid #FFD700;
+}
