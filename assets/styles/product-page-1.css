@@ -123,12 +123,199 @@ header {
 /* Classe para adicionar fotos */
 .foto-no-quadrado {
     position: absolute;
-    top: 35%;
-    left: 15%; /* Posição à direita do texto */
+    top: 32%;
+    left: 17%; /* Posição à direita do texto */
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 15px;
     object-fit: cover; /* Mantém proporção */
     z-index: 501;
+}
+
+.carlos-pereira {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-60%, -50%);
+    font-size: 1.5rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.comentario-carlos {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-60%, -50%);
+    font-size: 1.2rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.michael-santos {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 82%;
+    left: 20%;
+    transform: translate(-60%, -50%);
+    font-size: 1.5rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.comentario-michael {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 88%;
+    left: 20%;
+    transform: translate(-60%, -50%);
+    font-size: 1.2rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.camada-cinza-preco {
+    background-color: #ACACAC;
+    color: #273B2D;
+    font-family: libre caslon display, serif;
+    font-size: 23px;
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    left: 51%; /* Posição à direita do texto */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.botao-adicionar-ao-carrinho {
+    background-color: #3F624A;
+    color: #ffffff;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%); /* Adiciona esta linha para centralização perfeita */
+    display: flex;
+    justify-content: center;
+    cursor: pointer; /* Adiciona cursor pointer para melhor experiência do usuário */
+    transition: all 0.3s ease; /* Adiciona transição suave para efeitos hover */
+    z-index: 999;
+}
+
+.botao-adicionar-ao-carrinho:hover {
+    background-color: #4A7356;
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nome-do-produto {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 20%;
+    left: 60%; /* Posição à direita do texto */
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.camada-verde-classificacao {
+    background-color: #3F624A;
+    color: #ffffff;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.camada-verde-classificacao:hover {
+    background-color: #4A7356;
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mais-informacoes-sobre-descricao-1 {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: #696969;
+    letter-spacing: 1px;
+    width: 300px;
+    z-index: 999;
+}
+
+.mais-informacoes-sobre-descricao div {
+    margin-bottom: 3px;
+    line-height: 1.2;
+}
+
+.mais-informacoes-sobre-avaliacoes {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 40%;
+    left: 57%; /* Posição à direita do texto */
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.descricao-do-produto {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 50%;
+    left: 57%; /* Posição à direita do texto */
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+.mais-informacoes-sobre-descricao-2 {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 76%;
+    left: 70%; /* Posição à direita do texto */
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    width: 500px;               /* Controla o comprimento da linha */
 }
