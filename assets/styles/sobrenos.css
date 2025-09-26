@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 
 * {
     margin: 0;
@@ -23,9 +23,11 @@ body{
 
 .trabalhador {
     position: relative;
-    width: 50px; /* Tamanho base da imagem */
+    width: 700px; /* Tamanho base da imagem */
     height: auto;
     margin: 0;
+    margin-bottom: 500px;
+    margin-right: 100px;
     padding: 0;
     transition: all 0.3s ease; /* Suaviza qualquer mudança de posição */
 }
@@ -99,3 +101,23 @@ header {
 
 }
 
+.container{
+    color: #ffffff;
+    margin-left: 50px;
+    
+}
+
+.texto-sobre h1 {
+    font-family:  "Libre Caslon Display" , Regular, Arial, Helvetica, sans-serif;
+}
+
+.texto-sobre p {
+    font-family:  Raleway ,Arial, Helvetica, sans-serif;
+    color: #FFFCE9;
+    width: 30%;
+    font-family: "Libre Caslon Display";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
