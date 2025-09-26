@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fleur checkout</title>
-    <link rel="stylesheet" href="/assets/styles/checkout.css">
-</head>
-<body> 
-    <div class="flex-container">
-    <!--Adiciona div do primeiro retangulo-->
+    <link rel="stylesheet" href="/assets/styles/checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <div class="card-principal">
+        <h1 class="titulo-principal">FINALIZAR COMPRA</h1>
 
-    <div class = "retanguloPrincipal">
-  
-        <div class="flex-retangulo1">
-        <!--Adiciona div dos textos dentro retangulo-->
-        <div class = "rItem1">
+        <div class="secao">
+          <h2 class="titulo-secao">INFORMAÇÕES & PAGAMENTO</h2>
 
-        </div>
-        <div class = "rItem2">
-            
-        </div>
-        <div class = "rItem3">
-            
-        </div>
-        <div class = "rItem4">
-            
-        </div>
+          <div class="form-layout">
+            <div class="coluna">
+              <div class="campo"><h4>Nome Completo</h4> </div>
+              <div class="campo"><h4>Endereço</h4> </div>
+              <div class="campo"><h4>Cidade</h4> </div>
+              <div class="campo"><h4>Estado</h4> </div>
+              <div class="quadrado1-marcar">
+                <div class="quadrado1"></div>
+                <p>Salvar informações para a próxima compra</p>
+              </div>
+            </div>
 
-        </div>
-
-        <div class="flex-retangulo2">
-         <!--Adiciona div dos botões dentro retangulo-->
-         <div class = "r2Item1">
-
-        </div>
-        <div class = "r2Item2">
-            
-        </div>
-        <div class = "r2Item3">
-            
-        </div>
-        <div class = "r2Item4">
-            
+            <div class="coluna">
+              <div class="campo"><h4>Pagamento</h4> </div>
+              <div class="campo"><h4>Número do Cartão</h4> </div>
+              <div class="campo cvv">
+                 <h4>CVV</h4>
+              </div>
+              <div class="campo"><h4>Validade</h4> </div>
+            </div>
+          </div>
         </div>
 
+        <div class="secao resumo-pedido">
+          <h2 class="titulo-secao">RESUMO DO PEDIDO</h2>
+
+          <div class="produtos-layout">
+            <div class="produto">
+              <div class="circulo-img">
+                <img src="../assets/images/colarDiamante.png" alt="Colar de Diamante" />
+              </div>
+              <p class="nome-produto">Colar de Diamante</p>
+              <p class="preco-produto">R$ 30.000,00</p>
+            </div>
+
+            <div class="produto">
+              <div class="circulo-img">
+                <img src="../assets/images/brincoperola.png" alt="Brinco de Pérolas" />
+              </div>
+              <p class="nome-produto">Brinco de Pérolas</p>
+              <p class="preco-produto">R$ 10.000,00</p>
+            </div>
+
+            <div class="produto">
+              <div class="circulo-img">
+                <img src="../assets/images/anelDiamante.png" alt="Anel de Diamante" />
+              </div>
+              <p class="nome-produto">Anel de Diamante</p>
+              <p class="preco-produto">R$ 15.000,00</p>
+            </div>
+          </div>
+
+          <div class="totais-container">
+            <div class="info-total subtotal">
+              <p>SUBTOTAL</p>
+              <p>ENVIO GRÁTIS</p>
+            </div>
+            <div class="info-total total">
+              <p>ENVIO GRÁTIS</p>
+              <p class="valor-total">TOTAL **R$ 55.000,00**</p>
+            </div>
+          </div>
+
+          <button class="botao-finalizar">
+            FINALIZAR PEDIDO
+            <span class="cadeado">🔒</span>
+          </button>
         </div>
-    
+      </div>
     </div>
-
-    </div>
-</body>
+  </body>
 </html>
