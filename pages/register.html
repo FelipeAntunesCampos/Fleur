@@ -23,16 +23,25 @@
         
         <p class="subtitulo">Experimente a beleza requintada</p>
 
-        <form action="#" method="POST">
+        <form action="sign.html" method="GET">
             <div class="grupo">
-                <input type="email" id="email" placeholder="Email">
+                <input 
+                  type="email" 
+                  id="email"
+                  name="email"
+                  required
+                  minlength="3"
+                  maxlength="50"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  placeholder="seu.email@gmail.com"> 
+
             </div>
             <div class="grupo">
-                <input type="password" id="senha" placeholder="Senha">
+                <input type="password" id="senha" placeholder="senha">
             </div>
-        
+
+            <button type="submit" class="botao">Registrar-se</button>
         </form>
-        <a href="sign.html" class="link">Registrar-se</a> 
 
     </div>
     
