@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FAFAF3;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
   position: absolute;
   left: 0;   /* Posiciona na direita */
   width: 400px; /* Tamanho da imagem */
-  height: 1000; /* Mantém a proporção */
+  height: 1000px; /* Mantém a proporção */
 }
 
 .imagem4 {
@@ -39,8 +39,6 @@ body {
   height: auto; /* Mantém a proporção */
   bottom: -3%;
 }
-
-
 
 
 
@@ -95,21 +93,19 @@ body {
 
 
 .botao {
-    width: 80%;
-    padding: 12px;
-    background-color: #9B7059;
-    color: white;
-    border: none;
     border-radius: 25px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-top: 15px;
+    margin: 15px auto 0 auto; 
+    width: 70%; 
+    padding: 11px;
+    background-color:#8B644E;
+    color: #ffffff; 
+    border: none;
+    font-weight: 500;
+    text-decoration: none; /* Remove o sublinhado */
+    text-align: center; 
+    display: inline-block; 
 }
 
-
-.botao:hover {
-    background-color: #8B644E;
-}
 
 
 .link {
@@ -118,10 +114,5 @@ body {
     font-size: 0.9rem;
     color: #9B7059;
     text-decoration: none;
-    font-weight: 400;
-}
-
-
-.link:hover {
-    text-decoration: underline;
+    font-weight: 500;
 }

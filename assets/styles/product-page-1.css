@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 
 
 * {
@@ -31,7 +32,6 @@ header {
     box-shadow: 2px 2px 30px;
     width: 100%;
     padding: 35px;
-
 }
 
 .logo{
@@ -90,5 +90,45 @@ header {
 .texto-button {
     color: #273B2D;
     text-decoration: none;
+}
 
+.quadrado-cinza {
+    font-family: libre caslon display, serif; 
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1800px;
+    height: 700px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 500;
+}
+
+.avaliacoes-do-produto {
+    font-family: libre caslon display, serif;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-60%, -50%);
+    font-size: 2rem;        /* Tamanho */
+    color: #273B2D;         /* Cor */
+    letter-spacing: 1px;    /* Espaçamento */
+    border-top: 1px solid rgb(0, 0, 0); /* Linha em cima */
+    padding-top: 15px;      /* Espaço entre a linha e o texto */
+    width: 500px;               /* Controla o comprimento da linha */
+}
+
+/* Classe para adicionar fotos */
+.foto-no-quadrado {
+    position: absolute;
+    top: 35%;
+    left: 15%; /* Posição à direita do texto */
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover; /* Mantém proporção */
+    z-index: 501;
 }
