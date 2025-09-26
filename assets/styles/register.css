@@ -5,7 +5,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .imagem1 {
@@ -47,17 +46,20 @@ body {
 }
 
 .link {
-    border-radius: 25px;
-    margin: 15px auto 0 auto; 
-    width: 75%; 
+    display: block; 
+    margin: 15px auto 0 auto; /* 15px em cima, auto nas laterais (centraliza), 0 embaixo */
+    /* 3. Estilos de aparência (mantidos ou ajustados) */
+    width: 80%; 
     padding: 12px;
-    background-color:#8B644E;
-    color: #ffffff; 
+    background-color: transparent; /* Geralmente links não têm cor de fundo de botão */
+    color: #9B7059; /* Use a cor marrom para o texto do link */
+    /* Remove estilos de botão que não queremos para um link simples */
     border: none;
+    border-radius: 0; /* Remove o arredondamento */
+    font-size: 1rem; /* Traz o tamanho de volta para um link */
     font-weight: 500;
-    text-decoration: none; /* Remove o sublinhado */
-    text-align: center; 
-    
+    text-decoration: none; /* Remove o sublinhado padrão */
+    text-align: center; /* Centraliza o texto dentro do bloco do link */
 }
 
 
@@ -72,6 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 
@@ -80,8 +83,8 @@ body {
     font-size: 0.9rem;
     color: #ffffff;
     margin-bottom: 40px;
-    font-weight: 300;
-    font-size: 95%;
+    font-weight: 25;
+    font-size: 150%;
 }
 
 
@@ -97,13 +100,40 @@ body {
     border: 1px solid rgb(109, 205, 139 );
     border-radius: 25px;
     background-color: #FAFAF3;
-    color: #ffffff;
+    color: #333333;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-    
+    font-family: Montesarat;
   
 }
 
+
+.botao {
+    width: 80%;
+    padding: 12px;
+    background-color: #9B7059;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+.botao:hover {
+    background-color: #8B644E;
+}
+
+
+.link {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+}
 
 
 .link:hover {

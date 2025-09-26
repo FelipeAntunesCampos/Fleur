@@ -1,3 +1,5 @@
+CSS
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    background: radial-gradient(circle at center, #1C4A2E 0%, #0D2919 90%);
+    background: radial-gradient(circle at center, #81C897 0%, #3F624A 90%);
     min-height: 100vh;
     font-family: 'Playfair Display', Georgia, serif;
     color: #F0EAD6;
@@ -18,14 +20,14 @@ body {
 }
 
 .card-principal {
-    background-color: #0D2919;
+    background-color: #3F624A;
     padding: 50px 70px;
     border-radius: 12px;
     
     border: 2px solid transparent; 
-    border-image: linear-gradient(135deg, #A67C00, #FFD700, #A67C00);
+    border-image: linear-gradient(135deg, #D9D9D9, #81C897, #D9D9D9);
     border-image-slice: 1; 
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(255, 215, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(129, 200, 151, 0.2);
 }
 
 .titulo-principal {
@@ -33,9 +35,9 @@ body {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 50px;
-    color: #FFD700;
+    color: #81C897;
     letter-spacing: 2px;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+    text-shadow: 0 0 5px rgba(129, 200, 151, 0.5);
 }
 
 .secao {
@@ -49,7 +51,7 @@ body {
     text-align: left;
     margin-bottom: 25px;
     padding-bottom: 8px;
-    border-bottom: 1px solid rgba(166, 124, 0, 0.5);
+    border-bottom: 1px solid rgba(129, 200, 151, 0.5);
 }
 
 
@@ -67,14 +69,14 @@ body {
 
 .campo {
     width: 100%;
-    height: 45px;
+    height: 20px;
     background-color: rgba(0, 0, 0, 0.4); 
     color: #F0EAD6;
     padding: 12px;
     font-size: 16px;
     border-radius: 4px;
-    border: 1px solid #A67C00;
-    box-shadow: 0 0 8px rgba(166, 124, 0, 0.4); 
+    border: 1px solid #D9D9D9;
+    box-shadow: 0 0 8px rgba(217, 217, 217, 0.4); 
     
     display: flex;
     justify-content: space-between;
@@ -83,8 +85,8 @@ body {
 }
 
 .campo:hover {
-    border-color: #FFD700;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    border-color: #81C897;
+    box-shadow: 0 0 10px rgba(129, 200, 151, 0.8);
 }
 
 .quadrado1-marcar {
@@ -93,17 +95,10 @@ body {
     font-size: 14px;
     margin-top: 8px;
     color: #DDDDDD;
+    gap: 10px;
+    
 }
 
-.quadrado1 {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #FFD700;
-    margin-right: 10px;
-    background-color: #000;
-    border-radius: 2px;
-    box-shadow: 0 0 4px rgba(255, 215, 0, 0.3);
-}
 
 .produtos-layout {
     display: flex;
@@ -122,14 +117,14 @@ body {
     height: 160px;
     border-radius: 50%;
     margin: 0 auto 15px auto;
-    background-color: #000;
+    background-color: #0A2014;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 
-    border: 3px solid #FFD700;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    border: 3px solid #81C897;
+    box-shadow: 0 0 15px rgba(129, 200, 151, 0.7);
 }
 
 .circulo-img img {
@@ -146,7 +141,7 @@ body {
 
 .preco-produto {
     font-size: 16px;
-    color: #DAA520;
+    color: #81C897;
     font-weight: 600;
 }
 
@@ -157,7 +152,7 @@ body {
     margin-top: 50px;
     font-size: 16px;
     padding-top: 15px;
-    border-top: 1px dashed rgba(255, 215, 0, 0.2);
+    border-top: 1px dashed rgba(217, 217, 217, 0.2);
 }
 
 .info-total {
@@ -176,8 +171,8 @@ body {
 .valor-total {
     font-size: 30px;
     font-weight: 700;
-    color: #FFD700;
-    text-shadow: 0 0 4px rgba(255, 215, 0, 0.7);
+    color: #81C897;
+    text-shadow: 0 0 4px rgba(129, 200, 151, 0.7);
 }
 
 .botao-finalizar {
@@ -193,22 +188,22 @@ body {
     text-align: center;
     text-transform: uppercase;
     
-    color: #FFD700;
-    background: linear-gradient(to bottom, #10351f, #0A2014); 
+    color: #81C897;
+    background: linear-gradient(to bottom, #3f624a, #2e4a37); 
     
     border: 3px solid transparent; 
-    border-image: linear-gradient(to right, #A67C00, #FFD700, #A67C00);
+    border-image: linear-gradient(to right, #D9D9D9, #81C897, #D9D9D9);
     border-image-slice: 1;
     border-radius: 8px;
     
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), inset 0 0 5px rgba(255, 215, 0, 0.2); 
+    box-shadow: 0 0 15px rgba(129, 200, 151, 0.5), inset 0 0 5px rgba(129, 200, 151, 0.2); 
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .botao-finalizar:hover {
-    background: linear-gradient(to top, #10351f, #0A2014); 
-    box-shadow: 0 0 20px #FFD700, inset 0 0 8px #FFD700;
+    background: linear-gradient(to top, #3f624a, #2e4a37); 
+    box-shadow: 0 0 20px #81C897, inset 0 0 8px #81C897;
     transform: translateY(-2px);
 }
 
