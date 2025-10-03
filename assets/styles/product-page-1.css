@@ -1,321 +1,275 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.controle-gradient {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-}
-
-.gradient {
-    position: absolute;
-    width: 688px;
-    height: 688px;
-    border-radius: 688px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(161, 171, 147, 0.61) 0%, rgba(63, 98, 74, 0.00) 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    box-shadow: 2px 2px 30px;
-    width: 100%;
-    padding: 35px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  box-shadow: 2px 2px 30px;
+  width: 100%;
+  padding: 35px;
 }
 
-.logo{
-    width: 33%;
-    justify-content: center;
-    height: auto;
-    padding-left: 185px;
-    padding-right: 185px;
+.logo {
+  width: 33%;
+  justify-content: center;
+  height: auto;
+  padding-left: 185px;
+  padding-right: 185px;
 }
 
 .textos-header1 {
-    font-family:  Raleway, Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    font-size: 22px;
-    width: 33%;
-    
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  font-size: 22px;
+  width: 33%;
 }
 
 .textos-header2 {
-    font-family:  Raleway, Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 70px;
-    font-size: 22px;
-    width: 33%;
-}
-
-.viewcolection {
-    background-color: antiquewhite;
-    color: #273B2D;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border: none;
-    border-radius: 20px;
-    padding: 15px 30px;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Adiciona esta linha para centralização perfeita */
-    display: flex;
-    justify-content: center;
-    cursor: pointer; /* Adiciona cursor pointer para melhor experiência do usuário */
-    transition: all 0.3s ease; /* Adiciona transição suave para efeitos hover */
-    z-index: 999;
-}
-
-.viewcolection:hover {
-    background-color: #ffffff;
-    color: #273B2D;
-    translate: 0 -5px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 70px;
+  font-size: 22px;
+  width: 33%;
 }
 
 .texto-button {
-    color: #273B2D;
-    text-decoration: none;
+  color: #273b2d;
+  text-decoration: none;
 }
 
 .quadrado-cinza {
-    font-family: libre caslon display, serif; 
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1800px;
-    height: 700px;
-    background-color: #D9D9D9;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    z-index: 500;
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1800px;
+  height: 700px;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 500;
 }
 
 .avaliacoes-do-produto {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 60%;
-    left: 20%;
-    transform: translate(-60%, -50%);
-    font-size: 2rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    border-top: 1px solid rgb(0, 0, 0); /* Linha em cima */
-    padding-top: 15px;      /* Espaço entre a linha e o texto */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-60%, -50%);
+  font-size: 2rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-top: 15px;
+  width: 500px;
 }
 
-/* Classe para adicionar fotos */
 .foto-no-quadrado {
-    position: absolute;
-    top: 32%;
-    left: 17%; /* Posição à direita do texto */
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-    object-fit: cover; /* Mantém proporção */
-    z-index: 501;
+  position: absolute;
+  top: 32%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  z-index: 501;
 }
 
 .carlos-pereira {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    transform: translate(-60%, -50%);
-    font-size: 1.5rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-60%, -50%);
+  font-size: 1.5rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .comentario-carlos {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 75%;
-    left: 20%;
-    transform: translate(-60%, -50%);
-    font-size: 1.2rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-60%, -50%);
+  font-size: 1.2rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .michael-santos {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 82%;
-    left: 20%;
-    transform: translate(-60%, -50%);
-    font-size: 1.5rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 82%;
+  left: 20%;
+  transform: translate(-60%, -50%);
+  font-size: 1.5rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .comentario-michael {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 88%;
-    left: 20%;
-    transform: translate(-60%, -50%);
-    font-size: 1.2rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 88%;
+  left: 20%;
+  transform: translate(-60%, -50%);
+  font-size: 1.2rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .camada-cinza-preco {
-    background-color: #ACACAC;
-    color: #273B2D;
-    font-family: libre caslon display, serif;
-    font-size: 23px;
-    border: none;
-    border-radius: 15px;
-    width: 300px;
-    height: 50px;
-    position: absolute;
-    top: 30%;
-    left: 51%; /* Posição à direita do texto */
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    z-index: 999;
+  background-color: #acacac;
+  color: #273b2d;
+  font-family: libre caslon display, serif;
+  font-size: 23px;
+  border: none;
+  border-radius: 15px;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  top: 30%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
 .botao-adicionar-ao-carrinho {
-    background-color: #3F624A;
-    color: #ffffff;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border: none;
-    border-radius: 20px;
-    padding: 15px 30px;
-    position: absolute;
-    top: 90%;
-    left: 90%;
-    transform: translate(-50%, -50%); /* Adiciona esta linha para centralização perfeita */
-    display: flex;
-    justify-content: center;
-    cursor: pointer; /* Adiciona cursor pointer para melhor experiência do usuário */
-    transition: all 0.3s ease; /* Adiciona transição suave para efeitos hover */
-    z-index: 999;
+  background-color: #3f624a;
+  color: #ffffff;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 999;
 }
 
 .botao-adicionar-ao-carrinho:hover {
-    background-color: #4A7356;
-    transform: translate(-50%, -50%) scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background-color: #4a7356;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nome-do-produto {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 20%;
-    left: 60%; /* Posição à direita do texto */
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .camada-verde-classificacao {
-    background-color: #3F624A;
-    color: #ffffff;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    border: none;
-    border-radius: 15px;
-    width: 60px;
-    height: 40px;
-    position: absolute;
-    top: 20%;
-    left: 44%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 999;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #3f624a;
+  color: #ffffff;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top: 20%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .camada-verde-classificacao:hover {
-    background-color: #4A7356;
-    transform: translate(-50%, -50%) scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background-color: #4a7356;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .mais-informacoes-sobre-descricao-1 {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.4rem;
-    color: #696969;
-    letter-spacing: 1px;
-    width: 300px;
-    z-index: 999;
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  color: #696969;
+  letter-spacing: 1px;
+  width: 300px;
+  z-index: 999;
 }
 
 .mais-informacoes-sobre-descricao div {
-    margin-bottom: 3px;
-    line-height: 1.2;
+  margin-bottom: 3px;
+  line-height: 1.2;
 }
 
 .mais-informacoes-sobre-avaliacoes {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 40%;
-    left: 57%; /* Posição à direita do texto */
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 40%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .descricao-do-produto {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 50%;
-    left: 57%; /* Posição à direita do texto */
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
 
 .mais-informacoes-sobre-descricao-2 {
-    font-family: libre caslon display, serif;
-    position: absolute;
-    top: 76%;
-    left: 70%; /* Posição à direita do texto */
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;        /* Tamanho */
-    color: #273B2D;         /* Cor */
-    letter-spacing: 1px;    /* Espaçamento */
-    width: 500px;               /* Controla o comprimento da linha */
+  font-family: libre caslon display, serif;
+  position: absolute;
+  top: 76%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #273b2d;
+  letter-spacing: 1px;
+  width: 500px;
 }
