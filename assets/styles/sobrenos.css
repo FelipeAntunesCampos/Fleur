@@ -26,10 +26,11 @@ body{
     width: 700px; /* Tamanho base da imagem */
     height: auto;
     margin: 0;
-    margin-bottom: 500px;
+    margin-bottom: 1200px;
     margin-right: 100px;
     padding: 0;
     transition: all 0.3s ease; /* Suaviza qualquer mudança de posição */
+
 }
 
 header {
@@ -103,21 +104,33 @@ header {
 
 .container{
     color: #ffffff;
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-top: 80px;
     
 }
 
 .texto-sobre h1 {
-    font-family:  "Libre Caslon Display" , Regular, Arial, Helvetica, sans-serif;
+    font-family:  "Libre Caslon Display" , Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
 }
+
 
 .texto-sobre p {
     font-family:  Raleway ,Arial, Helvetica, sans-serif;
     color: #FFFCE9;
-    width: 30%;
-    font-family: "Libre Caslon Display";
-    font-size: 25px;
+    width: 43%; 
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 30px;
+}
+
+
+.barrinha {
+ background-color: #FFFCE9;
+ padding: 1px;
+ width: 40%;
+ border-radius: 26px;
 }
