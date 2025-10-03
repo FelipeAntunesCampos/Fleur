@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
+
 body {
   margin: 0;
   background: #486651;
@@ -9,22 +12,29 @@ body {
   background: #bfc6b1;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   display: flex;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   align-items: center;
   justify-content: space-between;
   padding: 30px;
   height: 65px;
 }
-.navbar .nav-left,
+.navbar .nav-left {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
 .navbar .nav-right {
   display: flex;
   gap: 32px;
   align-items: center;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 .navbar a {
   color: #000000;
   text-decoration: none;
   font-size: 17px;
-  font-family:  Raleway, Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   transition: opacity 0.2s;
   opacity: 0.8;
 }
@@ -36,7 +46,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 32px;
-  font-family:  Raleway, Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   color: #486651;
   font-weight: 700;
   gap: 10px;
@@ -66,7 +76,7 @@ body {
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 42px;
-  font-family:  Raleway, Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   text-align: center;
   max-width: 600px;
   line-height: 1.4;
@@ -74,16 +84,25 @@ body {
 .contact-container p {
   font-size: 22px;
   margin: 18px 0;
-  font-family:  Raleway, Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   text-align: center;
   max-width: 600px;
   line-height: 1.4;
+  color: #bfc6b1;
 }
 
 .contact-container a {
   text-decoration: none;
   color: #bfc6b1;
+  font-weight: 600;
+  transition: color 0.2s;
+  
 }
+
+.contact-container a:hover {
+  color: #fff;
+}
+
 @media (max-width: 800px) {
   .navbar {
     flex-direction: column;
