@@ -15,20 +15,23 @@ body {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
-  height: 65px;
+  padding: 40px;
+  position: relative;
 }
+
 .navbar .nav-left {
   display: flex;
   gap: 32px;
   align-items: center;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  flex: 1; /* Mantém os itens à esquerda */
 }
+
 .navbar .nav-right {
   display: flex;
   gap: 32px;
   align-items: center;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  justify-content: flex-end; /* Alinha os itens à direita */
+  flex: 1; /* Mantém os itens à direita */
 }
 .navbar a {
   color: #000000;
@@ -45,6 +48,7 @@ body {
 .navbar .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 32px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   color: #486651;
@@ -52,6 +56,10 @@ body {
   gap: 10px;
   letter-spacing: 2px;
   user-select: none;
+  transition: color 0.3s;
+  position: absolute; /* Centraliza a logo */
+  left: 50%;
+  transform: translateX(-50%);
 }
 .navbar .logo-icon {
   font-size: 26px;
