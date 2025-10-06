@@ -9,62 +9,63 @@ body {
   min-height: 100vh;
 }
 .navbar {
-  background: #bfc6b1;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   display: flex;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
+  padding: 18px 40px;
   position: relative;
+  gap: 20px;
+  z-index: 20;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
-.navbar .nav-left {
+/* wrapper para os links da navbar — mantém ordem e espaço */
+.navbar .nav {
   display: flex;
-  gap: 32px;
   align-items: center;
-  flex: 1; /* Mantém os itens à esquerda */
+  gap: 18px; /* espaçamento entre itens */
+  white-space: nowrap;
 }
 
-.navbar .nav-right {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  justify-content: flex-end; /* Alinha os itens à direita */
-  flex: 1; /* Mantém os itens à direita */
-}
+/* estilo consistente para cada link (botão-like) */
 .navbar a {
-  color: #000000;
+  color: #486651;
   text-decoration: none;
   font-size: 17px;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  transition: opacity 0.2s;
-  opacity: 0.8;
+  transition: opacity .18s, transform .14s;
+  opacity: .95;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .navbar a:hover {
   opacity: 1;
-  text-decoration: underline;
+  transform: translateY(-2px);
 }
+
+/* logo centralizada sem atrapalhar o fluxo dos links */
 .navbar .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  color: #486651;
-  font-weight: 700;
-  gap: 10px;
-  letter-spacing: 2px;
-  user-select: none;
-  transition: color 0.3s;
-  position: absolute; /* Centraliza a logo */
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: none; /* evita bloquear cliques nos links laterais */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  color: #486651;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
-.navbar .logo-icon {
-  font-size: 26px;
-  margin-right: 8px;
-}
+
+/* permite interação com elementos internos da logo (ex.: <a> ou <img>) */
+.navbar .logo * { pointer-events: auto; }
 
 .logo img {
   width: 250px;
@@ -74,58 +75,218 @@ body {
 
 .contact-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  min-height: calc(100vh - 65px);
-  padding-top: 70px;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+  padding: 56px 20px;
+  box-sizing: border-box;
 }
-.contact-container h2 {
-  font-size: 26px;
-  font-weight: 400;
-  margin-bottom: 42px;
+
+/* cartão central moderno */
+.contact-card {
+  width: 100%;
+  max-width: 980px;
+  background: #ffffff;
+  color: #16321f;
+  border-radius: 14px;
+  padding: 36px;
+  box-shadow: 0 10px 30px rgba(4, 30, 18, 0.12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  text-align: center;
-  max-width: 600px;
-  line-height: 1.4;
 }
-.contact-container p {
+
+/* título e descrição */
+.contact-card h2 {
   font-size: 22px;
-  margin: 18px 0;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  text-align: center;
-  max-width: 600px;
-  line-height: 1.4;
-  color: #bfc6b1;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #0f2618;
+  line-height: 1.15;
 }
 
-.contact-container a {
+.contact-card p.lead {
+  margin: 0 0 18px 0;
+  color: #425a48;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* coluna de informação (left) */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #2e4a39;
+  font-size: 15px;
+}
+
+.info-item .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #f4f6f4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #486651;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+/* --- Contato: telefone e email usam a cor principal --- */
+.info-item a[href^="tel"],
+.info-item a[href^="mailto"],
+.info-item .number,
+.contact-links a.contact-phone,
+.contact-links a.contact-email,
+.contact-phone,
+.contact-email {
+  color: #486651; /* cor principal do site */
+  font-weight: 700;
   text-decoration: none;
-  color: #bfc6b1;
+}
+
+.info-item a[href^="tel"]:hover,
+.info-item a[href^="mailto"]:hover,
+/* Aplica a cor personalizada para todos os links de telefone e e-mail no site */
+a[href^="tel"], a[href^="mailto"] {
+  color: #a9e2ba;     /* Mesma cor do site */
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .18s;
+}
+a[href^="tel"]:hover,
+a[href^="mailto"]:hover {
+  color: #a9e2ba;     /* Tom mais escuro ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* lista de links/ações */
+.contact-links {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: #f4faf6;
+  padding: 10px 12px;
+  border-radius: 10px;
   font-weight: 600;
-  transition: color 0.2s;
-  
+  font-size: 14px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.contact-links a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(72,102,81,0.12);
 }
 
-.contact-container a:hover {
-  color: #fff;
+/* coluna do formulário (right) */
+.contact-form {
+  width: 100%;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.contact-form label {
+  display: block;
+  font-size: 12px;
+  color: #35503f;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e6efe6;
+  border-radius: 10px;
+  background: #fff;
+  color: #102219;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow .12s ease, border-color .12s ease;
+  box-sizing: border-box;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #486651;
+  box-shadow: 0 6px 18px rgba(72,102,81,0.12);
+}
+.contact-form textarea {
+  grid-column: 1 / -1;
+  min-height: 140px;
+  resize: vertical;
 }
 
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 5vw;
-    gap: 10px;
+/* botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #486651;
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(72,102,81,0.18);
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  opacity: 0.98;
+}
+
+/* ajustes tipográficos menores */
+.contact-card small {
+  color: #89a088;
+  font-size: 13px;
+}
+
+/* responsividade */
+@media (max-width: 980px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
   }
-  .navbar .nav-left,
-  .navbar .nav-right {
-    gap: 15px;
+  .contact-form form {
+    grid-template-columns: 1fr;
   }
-  .contact-container h2 {
-    font-size: 22px;
+  .contact-form textarea {
+    min-height: 120px;
   }
-  .contact-container p {
-    font-size: 17px;
+}
+
+@media (max-width: 520px) {
+  .contact-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .contact-links a {
+    padding: 10px;
+    font-size: 13px;
   }
 }
