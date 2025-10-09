@@ -80,7 +80,7 @@ header {
   top: 32%;
   left: 20%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 400px;
   height: 300px;
   border-radius: 15px;
   object-fit: cover;
@@ -183,7 +183,7 @@ header {
 .nome-do-produto {
   font-family: libre caslon display, serif;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 57%;
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
