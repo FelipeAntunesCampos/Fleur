@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   background: #b0bfa7;
-  font-family: "Cormorant Garamond", serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif; /* Alterado */
 }
 
 header {
-  background: #b0bfa7;
+  background: #ffffff;
   box-shadow: 0 2px 8px #00000010;
   position: sticky;
   top: 0;
@@ -21,7 +21,7 @@ header {
   align-items: center;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   justify-content: space-between;
-  padding: 40px;
+  padding: 20px;
   border-bottom: 2px solid #8a9c87;
 }
 
@@ -29,8 +29,8 @@ header {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
-  padding: 30px;
-  font-family: "Playfair Display", serif;
+  padding: 20px;
+  font-family: Raleway, Arial, Helvetica, sans-serif; /* Alterado */
   color: #000000;
   font-weight: 700;
   gap: 10px;
@@ -122,6 +122,7 @@ main {
   flex-direction: column;
   align-items: center;
   color: #ede8da;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product-card img {
@@ -134,7 +135,7 @@ main {
 }
 
 .product-card h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 1.17rem;
   margin: 0 0 10px 0;
   text-align: center;
@@ -147,6 +148,7 @@ main {
   color: #ede8da;
   margin-bottom: 10px;
   font-weight: 600;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 .product-card button {
@@ -160,10 +162,26 @@ main {
   margin-top: 8px;
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
-  font-family: "Cormorant Garamond", serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  /* font-weight: 900; */
 }
 
 .product-card button:hover {
   background: #8a9c87;
   color: #ede8da;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px #0003;
+}
+
+.ver-products {
+  text-decoration: none;
+  color: #47523e;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
