@@ -18,16 +18,34 @@ body {
     margin-top: 90px;
 }
 
-.retanguloCarrinho { /* Cria uma caixa na qual vai armazenar a imagem*/
-    width: 250px;
+.retanguloCarrinho {
+    width: 230px;
     height: 462px;
-    background-color: #f5f3f3; /* Cinza claro */
+    background-color: #D9D9D9;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
-    position:absolute;
+    position: absolute;
     margin-right: 600px;
-    border-radius: 20px;
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+#imgCarrinho {
+    width: 100%;
+    height: 100%;
+    
+    /* Aplica o mesmo arredondamento */
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+#imgCarrinho img {
+    /* Mantém as propriedades de ajuste que corrigimos antes */
+    width: 100%;      
+    height: 100%;     
+    object-fit: cover; 
+    border-radius: 20px; 
 }
 
 .flex-container { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
@@ -39,7 +57,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    border-radius: 20px;
 }
 .flex-item2 { /* Cria uma caixa na qual vai armazenar os quadradinhos*/
     width: 600px;
